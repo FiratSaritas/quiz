@@ -20,8 +20,8 @@
                 </button>
                 <nav id="mainNav">
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#quizzes">Quizzes</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#all-quizzes-section">Quizzes</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -31,111 +31,87 @@
         </div>
     </header>
 
-    <section class="hero page-section">
-        <div class="container">
-            <h1>Discover Your True Personality</h1>
-            <p>Take our fun and insightful quizzes to learn more about yourself, your preferences, and how you relate to fictional characters from popular franchises.</p>
-            <a href="#quizzes" class="btn btn-accent">Explore Quizzes</a>
+    <section class="hero-new page-section">
+        <div class="container hero-content-new">
+            <h1>Unlock Your Inner Persona</h1>
+            <p class="subtitle-new">Dive deep into a world of fun, insightful, and surprising quizzes that reveal what truly makes you, YOU!</p>
+            <div class="search-bar-container">
+                <input type="text" id="quizSearchInput" placeholder="Search quizzes..." class="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <a href="#all-quizzes-section" class="btn btn-primary hero-btn">Explore All Quizzes</a>
         </div>
     </section>
 
-    <section id="quizzes">
+    <section id="all-quizzes-section" class="page-section all-quizzes-layout">
         <div class="container">
-            <h2 class="section-title">Popular Quizzes</h2>
-            <div class="quiz-grid">
-                <div class="quiz-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Entrepreneur Quiz">
-                    <div class="quiz-info">
+            <h2>All Quizzes</h2>
+            <div class="quiz-grid" id="quizGrid">
+                <div class="quiz-card" data-title="What Type of Entrepreneur Are You?" data-description="Uncover your entrepreneurial spirit and identify your business strengths.">
+                    <img src="https://via.placeholder.com/300x200?text=Entrepreneur+Quiz" alt="Entrepreneur Quiz" class="quiz-image">
+                    <div class="quiz-card-content">
                         <h3>What Type of Entrepreneur Are You?</h3>
-                        <p>Discover your business personality and entrepreneurial strengths with this insightful quiz.</p>
-                        <div class="stats">
-                            <span><i class="fas fa-users"></i> 25k+ taken</span>
-                            <span><i class="fas fa-star"></i> 4.8/5</span>
-                        </div>
-                        <a href="quizzes/quiz1.html" class="btn btn-block">Take Quiz</a>
+                        <p>Uncover your entrepreneurial spirit and identify your business strengths.</p>
+                        <a href="quizzes/quiz1.html" class="btn btn-secondary">Take Quiz</a>
                     </div>
                 </div>
-                
-                <div class="quiz-card">
-                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Harry Potter Quiz">
-                    <div class="quiz-info">
-                        <h3>What Harry Potter Character Are You?</h3>
-                        <p>Find out which Hogwarts character matches your personality. Are you Harry, Hermione, or someone else?</p>
-                        <div class="stats">
-                            <span><i class="fas fa-users"></i> 42k+ taken</span>
-                            <span><i class="fas fa-star"></i> 4.9/5</span>
-                        </div>
-                        <a href="quizzes/quiz2.html" class="btn btn-block">Take Quiz</a>
+                <div class="quiz-card" data-title="Which Harry Potter Character Are You?" data-description="Find out if you're a brave Gryffindor, a cunning Slytherin, or another beloved character!">
+                    <img src="https://via.placeholder.com/300x200?text=Harry+Potter+Quiz" alt="Harry Potter Quiz" class="quiz-image">
+                    <div class="quiz-card-content">
+                        <h3>Which Harry Potter Character Are You?</h3>
+                        <p>Find out if you're a brave Gryffindor, a cunning Slytherin, or another beloved character!</p>
+                        <a href="quizzes/quiz2.html" class="btn btn-secondary">Take Quiz</a>
                     </div>
                 </div>
-                
-                <div class="quiz-card">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Severance Quiz">
-                    <div class="quiz-info">
-                        <h3>What Severance Character Are You?</h3>
-                        <p>Discover which character from the hit show Severance matches your workplace personality.</p>
-                        <div class="stats">
-                            <span><i class="fas fa-users"></i> 18k+ taken</span>
-                            <span><i class="fas fa-star"></i> 4.7/5</span>
-                        </div>
-                        <a href="quizzes/quiz3.html" class="btn btn-block">Take Quiz</a>
+                <div class="quiz-card" data-title="Which Severance Character Are You?" data-description="Discover your Lumon Industries counterpart.">
+                    <img src="https://via.placeholder.com/300x200?text=Severance+Quiz" alt="Severance Quiz" class="quiz-image">
+                    <div class="quiz-card-content">
+                        <h3>Which Severance Character Are You?</h3>
+                        <p>Discover your Lumon Industries counterpart.</p>
+                        <a href="quizzes/quiz3.html" class="btn btn-secondary">Take Quiz</a>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
     </section>
 
-    <section class="features">
+ <footer>
         <div class="container">
-            <h2 class="section-title">Why Our Quizzes Are Popular</h2>
-            <div class="features-grid">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About PersonaQuiz</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
                 </div>
-        </div>
-    </section>
-
-    <footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h3>PersonaQuiz</h3>
-                <p>Discover your true personality through our fun and insightful quizzes. Find out which characters you relate to and learn more about yourself.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#all-quizzes-section">All Quizzes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://www.buymeacoffee.com/atlassa" target="_blank" rel="noopener noreferrer">Buy me a coffee ☕</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> minimibigmac@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Zürich, Switzerland</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#quizzes">All Quizzes</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="../privacy.html">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li><i class="fas fa-envelope"></i> contact@personaquiz.com</li>
-                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
-                </ul>
+            <div class="copyright">
+                <p>&copy; 2025 PersonaQuiz. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 PersonaQuiz. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
