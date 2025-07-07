@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrepreneur Quiz - PersonaQuiz</title>
+    <title>Marvel Superhero Quiz - PersonaQuiz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -44,6 +44,7 @@
             <div id="result-container" class="hidden">
                 <h2 id="result-title"></h2>
                 <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Marvel Studios</p>
                 <p id="result-description"></p>
                 <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
             </div>
@@ -52,30 +53,28 @@
 
     <script type="application/json" id="quiz-data">
         {
-            "title": "What Type of Entrepreneur Are You?",
+            "title": "What Marvel Superhero Matches Your Personality?",
             "questions": [
-                {
-                    "text": "When you see a problem, your first thought is:",
-                    "options": ["How can I build a solution?", "Who can I hire to fix this?", "Is there a market opportunity here?", "How can I improve the existing system?"]
-                },
-                {
-                    "text": "Your ideal work environment is:",
-                    "options": ["A bustling co-working space", "A quiet office where I can focus", "Constantly changing, meeting new people", "A well-organized, efficient setup"]
-                },
-                {
-                    "text": "You handle risk by:",
-                    "options": ["Taking big, calculated leaps", "Minimizing it with careful planning", "Embracing it as part of the thrill", "Diversifying to spread potential losses"]
-                },
-                {
-                    "text": "What drives you the most?",
-                    "options": ["Creating something brand new", "Building a powerful team and culture", "Spotting trends and capitalizing on them", "Optimizing processes for peak efficiency"]
-                }
+                { "text": "When facing a major challenge, your first instinct is to:", "options": ["Develop a detailed, high-tech solution.", "Rally your allies and lead them into action.", "Analyze the situation from every angle before acting.", "Use your agility and quick thinking to find an opening.", "Approach it with humor and a bit of chaos.", "Focus on the mission, no matter the personal cost.", "Seek knowledge and mystical understanding.", "Rely on your raw strength and unwavering determination.", "Adapt your strategy on the fly, using whatever is at hand.", "Inspire others with your ideals and protect the innocent."] },
+                { "text": "What's your ideal vacation?", "options": ["A luxurious getaway with all the latest tech.", "A rustic retreat where you can train and recharge.", "A quiet place to read and research arcane arts.", "An adventure full of parkour and city exploration.", "A taco truck festival and a movie marathon.", "A solo trip to hone your skills and gather intel.", "A journey to explore ancient ruins and forgotten lore.", "A place where you can unleash your energy without restraint.", "Exploring new planets and meeting alien cultures.", "Volunteering for a cause you believe in."] },
+                { "text": "What quality do you value most in others?", "options": ["Intelligence and ingenuity.", "Courage and unwavering loyalty.", "Wisdom and a calm demeanor.", "Optimism and resilience.", "A good sense of humor, even if it's dark.", "Discipline and efficiency.", "Curiosity and a thirst for knowledge.", "Integrity and a strong moral code.", "Adaptability and street smarts.", "Empathy and a desire to help."] },
+                { "text": "How do you react to injustice?", "options": ["I design a system or tool to fix it.", "I stand up and fight, leading by example.", "I seek to understand its root causes and restore balance.", "I try to intervene directly and protect the vulnerable.", "I make a witty comment, then jump into the fray.", "I work covertly to expose and dismantle it.", "I consult ancient texts and powerful spells to right wrongs.", "I unleash my full power to crush the oppressors.", "I use my unique abilities to outsmart and escape the threat.", "I organize and unite people to make a stand."] },
+                { "text": "What's your biggest personal challenge?", "options": ["Overcoming my own ego and hubris.", "Maintaining my idealism in a cynical world.", "Balancing immense power with a fragile human form.", "Learning to trust others and accept help.", "Taking anything seriously for too long.", "Dealing with a haunted past and making amends.", "Controlling forces beyond my full comprehension.", "Managing my anger and destructive tendencies.", "Finding where I truly belong in the universe.", "Living up to the expectations of myself and others."] },
+                { "text": "Your preferred mode of transportation is:", "options": ["A custom-built, high-performance vehicle or suit.", "On foot, leading the charge.", "Teleportation or mystical portals.", "Swinging through the city on webs.", "Whatever gets me there, preferably with explosions.", "Stealthy and untraceable methods.", "Through the astral plane or interdimensional travel.", "Leaping vast distances or smashing through obstacles.", "A spaceship, traversing the cosmos.", "Any method that allows me to protect civilians on the way."] },
+                { "text": "What kind of team role do you gravitate towards?", "options": ["The brilliant strategist and inventor.", "The inspirational leader and moral compass.", "The wise mentor and mystical guide.", "The agile scout and quick problem-solver.", "The unpredictable wildcard and comic relief.", "The indispensable operative and master of espionage.", "The one who delves into the unknown to find solutions.", "The powerhouse, the one who breaks things when needed.", "The adaptable outsider who brings a unique perspective.", "The quiet protector who ensures everyone's safety."] },
+                { "text": "When presented with a difficult choice, you prioritize:", "options": ["The most logical and effective outcome.", "The greater good, even if it's personally difficult.", "The preservation of mystical balance and ancient lore.", "Protecting innocent lives, no matter what.", "Having fun and making the best of a bad situation.", "Completing the objective, whatever it takes.", "Unlocking deeper truths and hidden realities.", "Doing what feels right, often with overwhelming force.", "My personal freedom and exploration.", "Hope and inspiring others to do what is right."] }
             ],
             "results": [
-                { "title": "The Innovator", "description": "You are driven by a passion for creating new things. You're a natural builder and problem-solver, always thinking about the next big idea.", "imageUrl": "https://via.placeholder.com/300x200?text=The+Innovator" },
-                { "title": "The Leader", "description": "You excel at bringing people together to work towards a common goal. Your strength lies in management, delegation, and building a strong company culture.", "imageUrl": "https://via.placeholder.com/300x200?text=The+Leader" },
-                { "title": "The Visionary", "description": "You have an uncanny ability to see where the market is going. You're a strategic thinker who thrives on identifying and seizing future opportunities.", "imageUrl": "https://via.placeholder.com/300x200?text=The+Visionary" },
-                { "title": "The Optimizer", "description": "You have a knack for making things better, faster, and more efficient. Your focus is on process and scalability, ensuring a business runs like a well-oiled machine.", "imageUrl": "https://via.placeholder.com/300x200?text=The+Optimizer" }
+                { "title": "Iron Man", "description": "You're a brilliant, quick-witted innovator who tackles problems with cutting-edge tech and a healthy dose of sarcasm. You might have an ego, but your drive to protect is undeniable.", "imageUrl": "../images/quiz1/IronMan.jpg" },
+                { "title": "Captain America", "description": "You are a selfless leader with an unwavering moral compass. You stand for justice and inspire others through your courage and integrity, always fighting for the greater good.", "imageUrl": "../images/quiz1/CaptainAmerica.jpg" },
+                { "title": "Spider-Man", "description": "You're smart, relatable, and a bit awkward, but you possess an incredible sense of responsibility. You use your unique abilities to help others, often with a quip or two.", "imageUrl": "../images/quiz1/SpiderMan.jpg" },
+                { "title": "Black Widow", "description": "You are a highly skilled, pragmatic, and resourceful individual. You're a master of strategy and espionage, with a complex past that fuels your fierce loyalty to your chosen family.", "imageUrl": "../images/quiz1/BlackWidow.jpg" },
+                { "title": "Thor", "description": "You are strong, valiant, and a bit prone to dramatic flair. You value honor and loyalty above all else, always ready to wield your power to protect your friends and realms.", "imageUrl": "../images/quiz1/Thor.jpg" },
+                { "title": "Doctor Strange", "description": "You are highly intelligent, driven by a thirst for knowledge, and often find yourself protecting reality from mystical threats. You are analytical and can be a bit arrogant, but ultimately dedicated.", "imageUrl": "../images/quiz1/DoctorStrange.jpg" },
+                { "title": "Hulk", "description": "You possess immense power and intelligence, often wrestling with your inner demons. You're fiercely protective of those you care about, and when pushed, you unleash unstoppable force.", "imageUrl": "../images/quiz1/Hulk.jpg" },
+                { "title": "Black Panther", "description": "You are a wise, noble, and principled leader who carries the weight of responsibility with grace. You balance tradition with innovation, always striving to do what is right for your people and the world.", "imageUrl": "../images/quiz1/BlackPanther.jpg" },
+                { "title": "Captain Marvel", "description": "You are incredibly powerful, confident, and independent. You fight for justice on a cosmic scale, always pushing forward and never backing down from a challenge.", "imageUrl": "../images/quiz1/CaptainMarvel.jpg" },
+                { "title": "Deadpool", "description": "You're irreverent, highly sarcastic, and thrive in chaos. You break the fourth wall and always have a witty comeback, even in the face of extreme danger. You do things your own way.", "imageUrl": "../images/quiz1/Deadpool.jpg" }
             ]
         }
     </script>

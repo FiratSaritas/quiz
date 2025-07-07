@@ -86,6 +86,12 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (resultImageElement) {
              resultImageElement.style.display = 'none'; // Hide if no image URL
         }
+        const imageCreditElement = document.getElementById('image-credit');
+        if (imageCreditElement && finalResult.imageUrl) {
+            imageCreditElement.style.display = 'block'; // Show credit if image exists
+        } else if (imageCreditElement) {
+            imageCreditElement.style.display = 'none'; // Hide credit if no image
+        }
 
         resultContainer.classList.remove('hidden');
     }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Character Quiz - PersonaQuiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>PersonaQuiz</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                    </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Warner Bros. Television</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Which Friends Character Are You Most Like?",
+            "questions": [
+                { "text": "What's your ideal way to spend a Friday night?", "options": ["Shopping or trying out a new trendy spot.", "Hosting a meticulously clean and organized dinner party.", "Playing guitar and singing quirky songs at a coffee house.", "Ordering a pizza and watching TV with friends.", "Making sarcastic jokes and commenting on everything.", "Lecturing my friends about dinosaurs or historical facts."] },
+                { "text": "How do you react to a messy apartment?", "options": ["It's fine, as long as my clothes are organized.", "I can't function until it's spotless!", "I don't really notice, or maybe it adds character.", "As long as there's food, I'm good.", "I'd make a joke about it, but secretly be a bit bothered.", "I'd point out the geological implications of the dust bunnies."] },
+                { "text": "What's your biggest fashion priority?", "options": ["Staying on top of the latest trends.", "Being practical and comfortable, but still stylish.", "Whatever feels unique and expresses my personality.", "Anything that's easy to put on and allows for maximum food intake.", "Whatever makes me blend in and not stand out too much.", "Something smart-casual, perhaps a tweed jacket."] },
+                { "text": "What type of food do you crave most often?", "options": ["Trendy fusion cuisine or salads.", "Something I've cooked perfectly myself.", "Whatever's organic, vegetarian, and ethically sourced.", "Sandwiches, pizza, or anything easy to eat.", "Takeout, as long as someone else orders it.", "A traditional, well-researched meal."] },
+                { "text": "How do you handle conflict with friends?", "options": ["I try to smooth things over, but might get emotional.", "I confront it directly and try to find a solution.", "I might offer some unconventional advice or avoid it altogether.", "I try to make light of it, or just listen quietly.", "I use humor to diffuse tension, sometimes to a fault.", "I try to use logic and reason, which sometimes makes it worse."] },
+                { "text": "What's your dream job?", "options": ["A high-powered fashion executive.", "A head chef or restaurateur.", "A masseuse or a spiritual healer.", "An actor, especially if it involves food.", "A data processor, as long as it's not too demanding.", "A paleontologist or university professor."] },
+                { "text": "What's your catchphrase or common reaction?", "options": ["'No! No no no!' (when things go wrong).", "'I KNOW!'", "'Oh, look! A bird!'", "'How YOU doin'?'", "'Could I BE any more [adjective]?'", "'Unagi!'"] },
+                { "text": "What defines your ideal romantic partner?", "options": ["Someone who is passionate and keeps things exciting.", "Someone I can plan a future with, who appreciates cleanliness.", "Someone who understands my quirks and appreciates my free spirit.", "Someone who loves food as much as I do.", "Someone who gets my jokes and can handle my sarcasm.", "Someone who is intellectually stimulating and shares my interests."] }
+            ],
+            "results": [
+                { "title": "Rachel Green", "description": "You're fashionable, a little bit dramatic, and always striving to improve yourself and your career. You're fiercely loyal to your friends and determined to make your own way in the world.", "imageUrl": "../images/quiz5/Rachel.jpg" },
+                { "title": "Monica Geller", "description": "You're a driven perfectionist with a love for cooking and cleanliness. You're fiercely competitive, incredibly organized, and the glue that often holds your friend group together.", "imageUrl": "../images/quiz5/Monica.jpg" },
+                { "title": "Phoebe Buffay", "description": "You're eccentric, free-spirited, and march to the beat of your own drum. You offer unconventional wisdom, have a unique perspective on life, and a heart of gold beneath your quirky exterior.", "imageUrl": "../images/quiz5/Phoebe.jpg" },
+                { "title": "Joey Tribbiani", "description": "You're charming, lovable, and deeply devoted to food and your friends. You might not be the sharpest tool in the shed, but your kindness, loyalty, and simple joys make you irresistible.", "imageUrl": "../images/quiz5/Joey.jpg" },
+                { "title": "Chandler Bing", "description": "You're the master of sarcasm and witty comebacks, often using humor as a defense mechanism. You're a loyal friend with a big heart, but you might struggle with commitment and expressing your emotions directly.", "imageUrl": "../images/quiz5/Chandler.jpg" },
+                { "title": "Ross Geller", "description": "You're an intelligent, sometimes awkward, and often pedantic individual with a deep passion for your interests. You're a romantic at heart, but your intensity and neurotic tendencies can sometimes get you into trouble.", "imageUrl": "../images/quiz5/Ross.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About PersonaQuiz</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@personaquiz.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PersonaQuiz. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

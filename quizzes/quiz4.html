@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Little Liars Quiz - PersonaQuiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>PersonaQuiz</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                    </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Freeform</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Which Pretty Little Liar Are You?",
+            "questions": [
+                { "text": "What's your go-to style?", "options": ["Eclectic and artistic with bold accessories.", "Trendy and fashionable, always up-to-date.", "Preppy and sophisticated, classic with a twist.", "Comfortable and sporty, but still put together.", "Glamorous and attention-grabbing."] },
+                { "text": "How do you handle secrets?", "options": ["I'm good at keeping my own, but might confide in one trusted person.", "I struggle to keep them, especially if they're juicy.", "I analyze them to find the truth, no matter how complex.", "I keep them close to protect myself and my friends.", "I'm the master of secrets, both keeping and revealing them strategically."] },
+                { "text": "When faced with a mysterious text message from an anonymous source, your first reaction is:", "options": ["To overthink every possible meaning and suspect everyone.", "To try and figure out who sent it, maybe with a bit of a panic.", "To investigate and connect it to other clues.", "To get scared and rely on my friends for support.", "To play along and try to turn the tables on them."] },
+                { "text": "What's your biggest strength?", "options": ["Creativity and empathy.", "Loyalty and a good sense of humor.", "Intelligence and determination.", "Kindness and compassion.", "Charisma and strategic thinking."] },
+                { "text": "What kind of relationship are you most drawn to?", "options": ["Passionate and sometimes complicated.", "Fun and supportive, with a bit of drama.", "Intellectually stimulating and ambitious.", "Sweet and stable, built on trust.", "Challenging and full of power dynamics."] },
+                { "text": "Your ideal weekend activity involves:", "options": ["Exploring art galleries or seeing an indie band.", "Shopping, gossiping, and hanging out with friends.", "Studying, solving puzzles, or engaging in a debate.", "Relaxing with loved ones, maybe a swim or a movie.", "Being the center of attention at a party or event."] },
+                { "text": "If you had a hidden talent, it would probably be:", "options": ["Writing poetry or painting.", "Giving amazing makeovers or finding the best deals.", "Winning debates or uncovering hidden truths.", "Being an incredible athlete or a supportive friend.", "Manipulating situations to your advantage."] },
+                { "text": "What's your biggest fear?", "options": ["Losing someone I love.", "Being alone or irrelevant.", "Failing to live up to expectations.", "Hurting people I care about.", "Losing control or being powerless."] }
+            ],
+            "results": [
+                { "title": "Aria Montgomery", "description": "You're artistic, free-spirited, and fiercely loyal to those you love. You have a unique style and tend to follow your heart, even if it leads to complicated situations. You value passion and authenticity.", "imageUrl": "../images/quiz4/Aria.jpg" },
+                { "title": "Hanna Marin", "description": "You're fashionable, witty, and incredibly loyal, though you might hide your intelligence behind a bubbly exterior. You're protective of your friends and have a big heart, even if you sometimes put your foot in your mouth.", "imageUrl": "../images/quiz4/Hanna.jpg" },
+                { "title": "Spencer Hastings", "description": "You are highly intelligent, driven, and competitive, always striving for perfection. You're a natural leader and problem-solver, often the one to put the pieces together, though you can be prone to overthinking.", "imageUrl": "../images/quiz4/Spencer.jpg" },
+                { "title": "Emily Fields", "description": "You're kind, compassionate, and incredibly loyal, often acting as the emotional anchor for your friends. You are supportive and brave, willing to stand up for what's right, even if it's difficult.", "imageUrl": "../images/quiz4/Emily.jpg" },
+                { "title": "Alison DiLaurentis", "description": "You are charismatic, cunning, and a master of manipulation, with a magnetic personality that draws people in. You are complex, resourceful, and capable of both great cruelty and fierce loyalty.", "imageUrl": "../images/quiz4/Alison.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About PersonaQuiz</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@personaquiz.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PersonaQuiz. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

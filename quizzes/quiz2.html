@@ -44,6 +44,7 @@
             <div id="result-container" class="hidden">
                 <h2 id="result-title"></h2>
                 <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Warner Bros. Entertainment.</p>
                 <p id="result-description"></p>
                 <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
             </div>
@@ -54,16 +55,31 @@
         {
             "title": "Which Harry Potter Character Are You?",
             "questions": [
-                { "text": "Which subject at Hogwarts would be your favorite?", "options": ["Defense Against the Dark Arts", "Potions", "Charms", "Transfiguration"] },
-                { "text": "A magical creature has escaped. What do you do?", "options": ["Bravely try to contain it myself", "Research its weaknesses in the library first", "Charm it with kindness and understanding", "Alert a professor immediately"] },
-                { "text": "Your defining quality is:", "options": ["Courage", "Intelligence", "Loyalty", "Ambition"] },
-                { "text": "You would most want to possess the:", "options": ["Elder Wand", "Resurrection Stone", "Cloak of Invisibility", "The Marauder's Map"] }
+                { "text": "Which subject at Hogwarts would be your favorite?", "options": ["Defense Against the Dark Arts", "Potions", "Charms", "Transfiguration", "Care of Magical Creatures", "Astronomy", "History of Magic"] },
+                { "text": "A magical creature has escaped. What do you do?", "options": ["Bravely try to contain it myself", "Research its weaknesses in the library first", "Charm it with kindness and understanding", "Alert a professor immediately", "Observe it from a safe distance", "Figure out how to make a profit from it", "Try to understand its motivations"] },
+                { "text": "Your defining quality is:", "options": ["Courage", "Intelligence", "Loyalty", "Ambition", "Creativity", "Kindness", "Resourcefulness"] },
+                { "text": "You would most want to possess the:", "options": ["Elder Wand", "Resurrection Stone", "Cloak of Invisibility", "The Marauder's Map", "Time-Turner", "Room of Requirement", "A powerful magical artifact"] },
+                { "text": "What do you do in your free time at Hogwarts?", "options": ["Practice spells and dueling", "Study in the library", "Spend time with friends in the common room", "Explore the castle grounds", "Work on a personal project or invention", "Help others with their problems", "Seek out new experiences and adventures"] },
+                { "text": "How do you handle a difficult challenge?", "options": ["Face it head-on with determination", "Analyze the situation carefully and plan a strategy", "Rely on the support of your friends", "Find a way to bypass it or use it to your advantage", "Approach it with an unconventional solution", "Remain calm and seek a peaceful resolution", "Embrace the chaos and adapt"] },
+                { "text": "What is your biggest fear?", "options": ["Failing those you care about", "Ignorance or not knowing enough", "Betrayal or being alone", "Not achieving your goals", "Being misunderstood or judged", "Harm coming to innocent creatures", "Being ordinary or uninspired"] },
+                { "text": "Which house do you feel most aligned with?", "options": ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin", "All of them for different reasons", "None, I forge my own path", "The one that best suits my current mood"] }
             ],
             "results": [
-                { "title": "Harry Potter", "description": "You are brave, loyal, and have a strong sense of justice. You don't shy away from a challenge and always stand up for your friends.", "imageUrl": "https://via.placeholder.com/300x200?text=Harry+Potter" },
-                { "title": "Hermione Granger", "description": "You are incredibly intelligent, resourceful, and logical. You believe that knowledge is power and there's no problem that can't be solved with a good book.", "imageUrl": "https://via.placeholder.com/300x200?text=Hermione+Granger" },
-                { "title": "Ron Weasley", "description": "You are a fiercely loyal and dependable friend. You have a great sense of humor and provide steadfast support to those you care about.", "imageUrl": "https://via.placeholder.com/300x200?text=Ron+Weasley" },
-                { "title": "Luna Lovegood", "description": "You are creative, open-minded, and march to the beat of your own drum. You see the world differently and aren't afraid to be yourself.", "imageUrl": "https://via.placeholder.com/300x200?text=Luna+Lovegood" }
+                { "title": "Harry Potter", "description": "You are brave, loyal, and have a strong sense of justice. You don't shy away from a challenge and always stand up for your friends.", "imageUrl": "../images/quiz2/Harry Potter.jpg"},
+                { "title": "Hermione Granger", "description": "You are incredibly intelligent, resourceful, and logical. You believe that knowledge is power and there's no problem that can't be solved with a good book.", "imageUrl": "../images/quiz2/Hermione Granger.jpg" },
+                { "title": "Ron Weasley", "description": "You are a fiercely loyal and dependable friend. You have a great sense of humor and provide steadfast support to those you care about.", "imageUrl": "../images/quiz2/Ron Weasley.jpg" },
+                { "title": "Luna Lovegood", "description": "You are creative, open-minded, and march to the beat of your own drum. You see the world differently and aren't afraid to be yourself.", "imageUrl": "../images/quiz2/Luna Lovegood.jpg" },
+                { "title": "Draco Malfoy", "description": "You are ambitious and cunning, always looking for ways to advance your position. You value status and can be fiercely protective of your own.", "imageUrl": "../images/quiz2/Draco Malfoy.jpg" },
+                { "title": "Albus Dumbledore", "description": "You possess immense wisdom and a calm demeanor. You are a natural leader, always looking at the bigger picture and guiding others.", "imageUrl": "../images/quiz2/Albus Dumbledore.jpg" },
+                { "title": "Severus Snape", "description": "You are complex and mysterious, often misunderstood. You are highly intelligent and possess a deep, often hidden, sense of loyalty.", "imageUrl": "../images/quiz2/Severus Snape.jpg" },
+                { "title": "Minerva McGonagall", "description": "You are stern but fair, with a strong sense of duty and discipline. You are highly capable and inspire respect in those around you.", "imageUrl": "../images/quiz2/Minerva McGonagall.jpg" },
+                { "title": "Rubeus Hagrid", "description": "You are kind-hearted, gentle, and have a deep love for all magical creatures. You are fiercely loyal to your friends and always see the good in people.", "imageUrl": "../images/quiz2/Rubeus Hagrid.jpg" },
+                { "title": "Ginny Weasley", "description": "You are brave, confident, and independent. You are a powerful witch and not afraid to stand up for yourself or what you believe in.", "imageUrl": "../images/quiz2/Ginny Weasley.jpg" },
+                { "title": "Neville Longbottom", "description": "You are humble, courageous, and grow into your strengths. You may start shy, but you have incredible resilience and inner bravery.", "imageUrl": "../images/quiz2/Neville Longbottom.jpg" },
+                { "title": "Sirius Black", "description": "You are charismatic, adventurous, and fiercely loyal to your friends. You value freedom and are willing to fight for what's right.", "imageUrl": "../images/quiz2/Sirius Black.jpg" },
+                { "title": "Remus Lupin", "description": "You are intelligent, compassionate, and possess a quiet strength. You are a calming presence and offer wise counsel to those around you.", "imageUrl": "../images/quiz2/Remus Lupin.jpg" },
+                { "title": "Bellatrix Lestrange", "description": "You are fiercely devoted to your beliefs, even if they are extreme. You possess immense power and a dramatic flair, often driven by intense passion.", "imageUrl": "../images/quiz2/Bellatrix Lestrange.jpg" },
+                { "title": "Fred/George Weasley", "description": "You are mischievous, hilarious, and incredibly creative. You love to bring joy and laughter to others, often through clever pranks and inventions.", "imageUrl": "../images/quiz2/FredGeorge Weasley.jpg" }
             ]
         }
     </script>

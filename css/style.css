@@ -832,3 +832,28 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Target the direct parent of result-container or a suitable wrapper */
+.container > #result-container { /* This specifically targets result-container if it's a direct child of .container */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;   /* Center items horizontally within the flex container */
+    /* Add any other necessary styles for the result-container itself */
+}
+
+/* Ensure the result-image-wrapper itself doesn't have conflicting centering */
+.result-image-wrapper {
+    position: relative;
+    /* Remove or comment out any margin-left/right: auto; or width: fit-content; if using flexbox */
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+    /* No direct centering styles here if parent is handling it via flexbox */
+}
+#image-credit {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.25rem;
+    display: none;
+}
