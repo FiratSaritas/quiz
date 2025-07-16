@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Villain Quiz - QuizPersona</title>
+    <meta name="description" content="Unlock your true self with QuizPersona! Dive into fun, insightful personality quizzes on Marvel, Harry Potter, Friends, and more. Discover who you truly are!">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Disney</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Which Disney Villain Are You Most Like?",
+            "questions": [
+                { "text": "What is your primary motivation?", "options": ["Power and control over others.", "Revenge against those who wronged me.", "Beauty and eternal youth.", "Wealth and material possessions.", "Chaos and general mischief.", "Knowledge and forbidden secrets.", "Attention and being the center of everything.", "Protecting what is rightfully mine."] },
+                { "text": "What's your preferred method of persuasion?", "options": ["Intimidation and fear.", "Manipulation and cunning words.", "Seduction and charm.", "Bribery and temptation.", "Outright force or magic.", "Intellectual debate and subtle influence.", "Dramatic flair and grand gestures.", "Strategic planning and patience."] },
+                { "text": "How do you react to failure?", "options": ["I become enraged and seek immediate retaliation.", "I retreat to plot my next, more elaborate scheme.", "I am devastated, but quickly find a new way to achieve my goal.", "I blame others and look for an easy escape.", "I laugh it off and try something even more outrageous.", "I analyze what went wrong and learn from my mistakes.", "I throw a tantrum and demand things go my way.", "I simply adjust my long-term plan."] },
+                { "text": "What's your greatest strength?", "options": ["My unwavering ambition.", "My sharp intellect and strategic mind.", "My captivating allure.", "My ability to acquire resources.", "My unpredictability and wild nature.", "My vast knowledge and magical abilities.", "My commanding presence and theatricality.", "My resilience and determination."] },
+                { "text": "What kind of henchmen do you prefer?", "options": ["Strong and loyal, even if a bit dim.", "Intelligent and cunning, able to execute complex plans.", "Adoring and easily manipulated.", "Greedy and easily bought.", "Manic and chaotic, matching my energy.", "Creatures of the night or those with dark powers.", "Those who appreciate my artistry and vision.", "Mindless minions who obey without question."] },
+                { "text": "What's your ideal living situation?", "options": ["A grand, imposing castle.", "A hidden lair, full of intricate gadgets and traps.", "A lavish palace, filled with mirrors and beauty products.", "A treasure-filled cave or vault.", "A dark, spooky forest or a desolate wasteland.", "A dusty, ancient library or a mystical dwelling.", "A stage or spotlight, wherever the audience is.", "A desolate, fiery realm."] },
+                { "text": "What is your biggest pet peeve?", "options": ["Insubordination or defiance.", "Naivete and optimism.", "Anyone more beautiful or admired than me.", "Poverty or lacking influence.", "Rules and order.", "Ignorance or meddling heroes.", "Being ignored or upstaged.", "Interference with my destiny."] },
+                { "text": "Which magical artifact would you most desire?", "options": ["A scepter of immense power.", "A book of dark spells.", "A magic mirror to confirm my beauty.", "A lamp with a powerful genie.", "A cauldron of transformation.", "A magical scroll containing ancient secrets.", "A voice-stealing shell.", "A spinning wheel with a powerful curse."] }
+            ],
+            "results": [
+                { "title": "Maleficent", "description": "You are powerful, elegant, and prone to dramatic pronouncements. You value respect above all else, and if you're not invited, someone will pay dearly. Your anger is legendary, but you possess a dark, undeniable majesty.", "imageUrl": "../images/quiz6/Maleficent.jpg" },
+                { "title": "Scar", "description": "You are cunning, manipulative, and driven by a thirst for power. You prefer to work from the shadows, using your intellect and charm to orchestrate your schemes. You're resentful of those who stand in your way.", "imageUrl": "../images/quiz6/Scar.jpg" },
+                { "title": "The Evil Queen", "description": "You are vain, obsessed with beauty, and incredibly jealous of anyone who might outshine you. You're willing to go to extreme lengths to maintain your status as 'the fairest of them all,' even resorting to dark magic.", "imageUrl": "../images/quiz6/EvilQueen.jpg" },
+                { "title": "Hades", "description": "You're a fast-talking, sarcastic, and often exasperated villain with a grand plan for domination. You're shrewd and resourceful, even if your temper sometimes gets the better of you. You hate being undermined.", "imageUrl": "../images/quiz6/Hades.jpg" },
+                { "title": "Cruella De Vil", "description": "You're flamboyant, utterly obsessed with fashion, and have a wild, unpredictable streak. Material possessions and your unique aesthetic drive your every decision, no matter how outrageous or cruel.", "imageUrl": "../images/quiz6/CruellaDeVil.jpg" },
+                { "title": "Ursula", "description": "You are a shrewd businesswoman with a flair for the dramatic, offering tempting deals that always come with a steep price. You're confident in your magical abilities and love to collect unfortunate souls.", "imageUrl": "../images/quiz6/Ursula.jpg" },
+                { "title": "Jafar", "description": "You are ambitious, power-hungry, and a master of dark magic and manipulation. You crave ultimate control and are not afraid to use deceit and trickery to achieve your lofty goals.", "imageUrl": "../images/quiz6/Jafar.jpg" },
+                { "title": "Captain Hook", "description": "You are theatrical, prone to dramatic outbursts, and constantly seeking revenge against those who slighted you. You're resourceful, but often foiled by your own impulsiveness and fear.", "imageUrl": "../images/quiz6/CaptainHook.jpg" },
+                { "title": "Gaston", "description": "You are arrogant, boastful, and accustomed to getting your way through sheer force of will and popularity. You believe you're the best at everything and anyone who defies you is simply mistaken.", "imageUrl": "../images/quiz6/Gaston.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

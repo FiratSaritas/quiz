@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift Era Quiz - QuizPersona</title>
+    <meta name="description" content="Unlock your true self with QuizPersona! Dive into fun, insightful personality quizzes on Marvel, Harry Potter, Friends, and more. Discover who you truly are!">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Taylor Swift / Universal Music Group</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Which Taylor Swift Era Are You?",
+            "questions": [
+                { "text": "What's your ideal Friday night?", "options": ["Playing guitar and writing songs in my bedroom.", "Going on an adventure with my crush.", "Planning a grand, theatrical event.", "Having a secret meeting with my closest friends.", "Exploring a whimsical forest or writing poetry.", "Embracing my confident, pop star self.", "Chilling with cats and celebrating my weirdness.", "Reclaiming my narrative and rising above.", "Reflecting deeply and writing about intense emotions.", "Going out with friends, feeling happy, free, confused, and lonely in the best way.", "Debating literary theories or intensely processing feelings."] },
+                { "text": "What's your go-to fashion style?", "options": ["Sparkly dresses and cowboy boots.", "Flowy dresses and fairytale aesthetics.", "Bold red lips and vintage-inspired glamour.", "Dark, edgy, and rebellious outfits.", "Cozy cardigans, braids, and cottagecore vibes.", "Bright, colorful, and playful pop art.", "Ethereal, whimsical, and a bit magical.", "Sleek, powerful, and unapologetically confident.", "Oversized sweaters and messy buns, leaning into the sadness.", "Shorts and a t-shirt, embracing the youthful energy.", "Academic chic meets distressed elegance, monochromatic."] },
+                { "text": "How do you handle heartbreak or disappointment?", "options": ["I write emotional songs about it.", "I try to keep a brave face but secretly dream of a fairytale ending.", "I turn it into an epic narrative, maybe even a revenge plot.", "I embrace the darkness and plot my comeback.", "I retreat into introspection and find comfort in nature.", "I shake it off and find joy in new beginnings.", "I process it with poetic melancholy and a bit of magic.", "I use it as fuel to rebuild and become stronger.", "I dive deep into the pain, exploring every nuance through art.", "I feel it deeply but try to find the silver lining.", "I intellectualize the pain, turning it into sharp, witty observations."] },
+                { "text": "What's your dream vacation?", "options": ["A road trip through the countryside, guitar in hand.", "A romantic getaway to a charming old city.", "A dazzling trip to New York City.", "A mysterious, hidden retreat.", "A cozy cabin in the woods, surrounded by nature.", "A vibrant, bustling city with lots of lights and energy.", "A magical, whimsical escape to an unknown land.", "A powerful return to a place where I was underestimated.", "A quiet, isolated place to write and reflect.", "A fun beach trip with friends.", "A dimly lit, historic cafe in a European city."] },
+                { "text": "What kind of music truly speaks to your soul?", "options": ["Storytelling country ballads.", "Dreamy pop anthems about love and longing.", "Big, bold, catchy pop hits.", "Dark, synth-heavy, and unapologetic pop.", "Acoustic, indie-folk, and introspective melodies.", "Upbeat, shimmering pop that makes you want to dance.", "Lush, atmospheric, and emotionally raw pop.", "Empowering, dramatic, and fiercely confident tracks.", "Sparse, haunting, and deeply melancholic songs.", "Feel-good, nostalgic pop that reminds you of summer.", "Witty, literary, and emotionally complex alternative pop."] },
+                { "text": "What's your biggest personal challenge?", "options": ["Feeling misunderstood or underestimated.", "Navigating the complexities of young love.", "Dealing with public scrutiny and criticism.", "Reinventing myself after being torn down.", "Overthinking and getting lost in my own thoughts.", "Maintaining my bubbly optimism in a cynical world.", "Balancing my inner world with external expectations.", "Standing strong against betrayal and injustice.", "Confronting deep-seated anxieties and mental struggles.", "Letting go of past hurts and embracing the present.", "Translating overwhelming feelings into coherent art."] },
+                { "text": "How do you express your creativity?", "options": ["Through heartfelt songwriting and storytelling.", "Crafting elaborate fantasies and romantic scenarios.", "Creating a powerful and iconic visual aesthetic.", "Writing sharp, biting lyrics and building intricate narratives.", "Baking, crafting, and creating a cozy atmosphere.", "Designing vibrant, joyful, and inclusive experiences.", "Weaving intricate lyrical tapestries and mythical tales.", "Orchestrating powerful comebacks and bold statements.", "Penning raw, confessional poetry and intimate narratives.", "Capturing moments of pure joy and youthful energy.", "Through verbose, complex literary expressions and emotional excavations."] },
+                { "text": "What's your ideal relationship dynamic?", "options": ["A sweet, innocent first love.", "A passionate, fairytale romance.", "An intense, all-consuming love.", "A secretive, defiant partnership against the world.", "A comforting, quiet, and deeply empathetic bond.", "A vibrant, fun, and mutually uplifting connection.", "A true soulmate connection, destined and magical.", "A fiercely loyal partnership, built on trust and shared resilience.", "A profound, perhaps tumultuous, intellectual and emotional bond.", "A carefree, adventurous, and exciting romance.", "A deep, complex bond with shared neuroses and artistic understanding."] },
+                { "text": "Which animal best represents your spirit?", "options": ["A faithful dog.", "A graceful swan.", "A powerful lion.", "A sly snake.", "A wise owl.", "A playful butterfly.", "A mystical unicorn.", "A determined phoenix.", "A solitary cat.", "A soaring bird.", "A brooding raven."] }
+            ],
+            "results": [
+                { "title": "Taylor Swift (Debut)", "description": "You are a storyteller at heart, deeply connected to your roots and the simple, heartfelt emotions of youth. You're sincere, a little bit naive, and always ready to put your feelings into words.", "imageUrl": "../images/quiz7/Debut.jpg" },
+                { "title": "Fearless", "description": "You're a hopeless romantic, dreaming of fairytale endings and believing in the power of young love. You're optimistic, courageous, and ready to face anything for a grand adventure.", "imageUrl": "../images/quiz7/Fearless.jpg" },
+                { "title": "Speak Now", "description": "You're dramatic, expressive, and not afraid to speak your mind, especially when it comes to defending yourself or your loved ones. You believe in grand gestures and taking control of your own narrative.", "imageUrl": "../images/quiz7/SpeakNow.jpg" },
+                { "title": "Red", "description": "You're a whirlwind of intense emotions – happy, free, confused, and lonely at the same time. You experience love and heartbreak deeply, making everything feel like a vivid, autumn-hued masterpiece.", "imageUrl": "../images/quiz7/Red.jpg" },
+                { "title": "1989", "description": "You've embraced your inner pop star! You're confident, fun-loving, and ready to shake off any negativity. You thrive in the city, love a good beat, and are living your best, most authentic life.", "imageUrl": "../images/quiz7/1989.jpg" },
+                { "title": "Reputation", "description": "You've risen from the ashes, bolder and more resilient than ever. You're fiercely protective of your inner circle, unapologetic, and unafraid to show your darker, more powerful side.", "imageUrl": "../images/quiz7/Reputation.jpg" },
+                { "title": "Lover", "description": "You're vibrant, hopeful, and believe in the transformative power of love. You've found your true colors and are ready to celebrate them, embracing both joy and vulnerability.", "imageUrl": "../images/quiz7/Lover.jpg" },
+                { "title": "Folklore", "description": "You're introspective, thoughtful, and find beauty in the quiet moments. You love to tell stories, explore complex emotions, and are drawn to the whimsical and melancholic sides of life.", "imageUrl": "../images/quiz7/Folklore.jpg" },
+                { "title": "Evermore", "description": "You're a deep thinker, comfortable with introspection and exploring the more nuanced, sometimes darker, aspects of life and relationships. You find beauty in the unconventional and the intricate.", "imageUrl": "../images/quiz7/Evermore.jpg" },
+                { "title": "Midnights", "description": "You're reflective, diving into your deepest thoughts and anxieties that keep you up at night. You're exploring different facets of yourself – from revenge fantasies to passionate desires – all with a mature, synth-pop sound.", "imageUrl": "../images/quiz7/Midnights.jpg" },
+                { "title": "The Tortured Poets Department", "description": "You are a wordsmith, a deep feeler, and you process your most intense emotions through intricate narratives and sharp, witty observations. Your heart may be bruised, but your mind is razor-sharp and your artistic output is prolific.", "imageUrl": "../images/quiz7/TTPD.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

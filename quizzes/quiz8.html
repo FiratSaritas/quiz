@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2000s Pop Queen Quiz - QuizPersona</title>
+    <meta name="description" content="Unlock your true self with QuizPersona! Dive into fun, insightful personality quizzes on Marvel, Harry Potter, Friends, and more. Discover who you truly are!">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Artist's Record Label / Public Domain</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Which 2000s Pop Queen Are You?",
+            "questions": [
+                { "text": "What's your signature fashion statement?", "options": ["Low-rise jeans and a crop top.", "Edgy punk-rock inspired outfits.", "Glamorous, sparkly gowns and big hair.", "Tracksuits and flashy accessories.", "Bohemian chic and natural beauty.", "Bold, experimental, and always pushing boundaries.", "Sweet, innocent, and a bit quirky."] },
+                { "text": "How do you spend a typical Saturday night?", "options": ["Hitting the dance floor with my besties.", "At a concert or open mic, expressing myself.", "Hosting a fabulous dinner party for my closest friends.", "Lounging at home, maybe ordering takeout.", "Exploring a new art exhibit or vintage shop.", "Experimenting with a new creative project.", "Having a sleepover and talking about crushes."] },
+                { "text": "What's your go-to karaoke song?", "options": ["'Toxic' by Britney Spears", "'Complicated' by Avril Lavigne", "'Dirrty' by Christina Aguilera", "'Crazy in Love' by Beyoncé", "'Beautiful' by Christina Aguilera", "'Poker Face' by Lady Gaga", "'Genie in a Bottle' by Christina Aguilera"] },
+                { "text": "What's your ideal vacation?", "options": ["A lively beach resort with lots of nightlife.", "A trip to a bustling city with a vibrant music scene.", "A luxurious getaway to a high-end spa or fashion capital.", "A private island retreat, away from the crowds.", "A road trip through scenic routes, stopping at quirky towns.", "An artistic retreat to a place that inspires innovation.", "A fun theme park adventure."] },
+                { "text": "How do you handle drama?", "options": ["I try to ignore it and focus on my own happiness.", "I'm not afraid to stand up for myself and speak my mind.", "I tackle it head-on, with passion and intensity.", "I'm fiercely loyal to my inner circle and protect them.", "I find a creative way to express my feelings about it.", "I use it as inspiration for my next big statement.", "I might get a bit emotional, but I'll get through it."] },
+                { "text": "What's your biggest strength?", "options": ["My resilience and ability to always come back stronger.", "My authenticity and refusal to conform.", "My powerful voice and emotional depth.", "My undeniable stage presence and charisma.", "My unique perspective and artistic vision.", "My fearless innovation and trendsetting abilities.", "My sweet charm and relatable innocence."] },
+                { "text": "What accessory can you not live without?", "options": ["A bedazzled low-rise belt.", "A tie or punk-rock choker.", "Sparkling jewelry or a statement microphone.", "Huge hoop earrings.", "A vintage scarf or hat.", "A unique, avant-garde piece of jewelry.", "A cute hair clip or headband."] },
+                { "text": "What describes your approach to life?", "options": ["Live, laugh, love, and dance through it all.", "Be true to yourself, even if it means being misunderstood.", "Go big or go home – everything should be passionate.", "Always be confident and in control of your destiny.", "Embrace your individuality and express yourself freely.", "Challenge norms and redefine what's possible.", "Stay optimistic and find joy in simple things."] }
+            ],
+            "results": [
+                { "title": "Britney Spears", "description": "You're the undeniable pop princess – iconic, influential, and resilient. You bring infectious energy and a playful spirit to everything you do, always bouncing back with a new hit.", "imageUrl": "../images/quiz8/BritneySpears.jpg" },
+                { "title": "Avril Lavigne", "description": "You're the punk-pop queen! Authentic, rebellious, and fiercely independent, you march to the beat of your own drum. You don't care what others think, as long as you're true to yourself.", "imageUrl": "../images/quiz8/AvrilLavigne.jpg" },
+                { "title": "Christina Aguilera", "description": "You're a powerhouse vocalist with incredible range and emotional depth. You're not afraid to be bold, raw, and express every facet of your personality, from sweet to 'Dirrty'.", "imageUrl": "../images/quiz8/ChristinaAguilera.jpg" },
+                { "title": "Beyoncé (Destiny's Child/Early Solo)", "description": "You're a force of nature – confident, charismatic, and always ready to command the stage. You're fiercely loyal to your friends and determined to succeed on your own terms.", "imageUrl": "../images/quiz8/Beyonce.jpg" },
+                { "title": "Gwen Stefani (No Doubt/Early Solo)", "description": "You're a style icon and a trendsetter with a unique blend of punk, pop, and reggae influences. You're effortlessly cool, creative, and always evolving your sound and look.", "imageUrl": "../images/quiz8/GwenStefani.jpg" },
+                { "title": "Pink", "description": "You're rebellious, outspoken, and always true to yourself. You challenge norms with your powerful lyrics and raw vulnerability, standing up for what you believe in.", "imageUrl": "../images/quiz8/Pink.jpg" },
+                { "title": "Katy Perry (Early)", "description": "You're sweet, quirky, and have a playful sense of humor. You bring a lighthearted, fun energy to every situation, and you're all about those feel-good pop anthems.", "imageUrl": "../images/quiz8/KatyPerry.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

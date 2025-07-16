@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Should You Actually Live? - QuizPersona</title>
+    <meta name="description" content="Find your ideal city! Take this fun quiz to discover where you truly belong, from vibrant metropolises to serene landscapes.">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: AI Generated</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "Where Should You Actually Live?",
+            "questions": [
+                { "text": "What's your ideal weekend activity?", "options": ["Hitting the bustling nightlife and exploring new bars.", "Visiting art galleries, museums, or attending live performances.", "Hiking in nature, enjoying the mountains or the sea.", "Exploring historical sites and charming old streets.", "Relaxing by a beach, soaking up the sun.", "Attending tech meetups or entrepreneurial workshops.", "Enjoying gourmet food and fine dining experiences.", "Volunteering, community events, or local markets."] },
+                { "text": "How important is public transportation to you?", "options": ["Absolutely essential, I prefer not to drive.", "Important for convenience, but I can drive.", "Not very important, I prefer driving or cycling.", "Somewhat important, for occasional use.", "Not a major factor, I enjoy walking.", "Highly important for daily commuting.", "Prefer a mix, but good public transport is a plus.", "I value walkable neighborhoods more than public transport."] },
+                { "text": "What kind of climate do you prefer?", "options": ["Warm, sunny, and vibrant year-round.", "Four distinct seasons with a moderate climate.", "Mild winters and warm, dry summers.", "Cool, often rainy, but lush and green.", "Hot and humid, with a strong beach culture.", "Dry and sunny, with cool evenings.", "Temperate, with pleasant summers and mild winters.", "Any climate, as long as it's active and engaging."] },
+                { "text": "What's your preferred pace of life?", "options": ["Fast-paced and energetic, always something happening.", "Dynamic, with a good balance of work and leisure.", "Relaxed and laid-back, focusing on well-being.", "Steady and culturally rich, with a sense of history.", "Slow and easy, by the water.", "Innovative and forward-thinking, with a focus on growth.", "Sophisticated and elegant, but with a vibrant core.", "Community-focused and friendly, with a relaxed vibe."] },
+                { "text": "How do you feel about living in a densely populated area?", "options": ["Love the energy and anonymity of big cities.", "Enjoy the buzz, but appreciate green spaces nearby.", "Prefer less crowded areas with more open space.", "Don't mind it, as long as there's character and history.", "Prefer a more spread-out, coastal feel.", "Thrive in urban environments with innovation.", "Enjoy a refined urban experience, not too chaotic.", "Prefer a medium-sized city with a strong community."] },
+                { "text": "What kind of job market is important to you?", "options": ["Diverse and competitive, with opportunities in many sectors.", "Creative industries, media, or arts-focused.", "Tourism, hospitality, or outdoor recreation.", "Education, research, or public service.", "Sustainable industries, marine biology, or wellness.", "Tech, startups, or finance.", "Luxury goods, fashion, or international business.", "Healthcare, education, or local businesses."] },
+                { "text": "Which phrase best describes your ideal social scene?", "options": ["Always something new to do, diverse crowds.", "Intellectual discussions, cultural events, close-knit groups.", "Outdoor adventures, casual gatherings, nature lovers.", "Charming cafes, historical pubs, rich conversations.", "Beach parties, relaxed hangouts, laid-back vibe.", "Networking events, innovative minds, bustling scene.", "Upscale dining, sophisticated events, elegant company.", "Friendly neighbors, local festivals, community spirit."] },
+                { "text": "What kind of housing do you envision yourself in?", "options": ["A modern apartment in a skyscraper.", "A classic townhouse with character.", "A comfortable home with a garden, near nature.", "An apartment in a historic building.", "A beach house or coastal villa.", "A sleek, tech-integrated condo.", "A stylish urban loft or historic apartment.", "A cozy home in a friendly neighborhood."] }
+            ],
+            "results": [
+                { "title": "New York City, USA", "description": "You thrive on endless possibilities and a fast-paced environment. The city that never sleeps perfectly matches your ambitious, energetic, and culturally curious personality. From Broadway shows to hidden speakeasies, you crave constant stimulation and diverse experiences. Get ready for the grind and the glamour!", "imageUrl": "../images/quiz10/NewYorkCity.jpg" },
+                { "title": "Barcelona, Spain", "description": "You're drawn to a vibrant blend of art, architecture, and a laid-back Mediterranean lifestyle. Barcelona's sunny beaches, lively streets, and rich history offer the perfect backdrop for your creative, social, and easygoing spirit. You appreciate good food, beautiful surroundings, and a healthy work-life balance.", "imageUrl": "../images/quiz10/Barcelona.jpg" },
+                { "title": "Vancouver, Canada", "description": "You seek harmony between urban living and breathtaking natural beauty. Vancouver's stunning mountains, ocean views, and commitment to outdoor activities resonate with your active, environmentally conscious, and balanced personality. You love a city that embraces both adventure and a relaxed, healthy lifestyle.", "imageUrl": "../images/quiz10/Vancouver.jpg" },
+                { "title": "Kyoto, Japan", "description": "You have a deep appreciation for tradition, serenity, and profound cultural experiences. Kyoto's ancient temples, peaceful gardens, and rich artistic heritage align with your reflective, respectful, and aesthetically inclined nature. You seek beauty in simplicity and a connection to history.", "imageUrl": "../images/quiz10/Kyoto.jpg" },
+                { "title": "Sydney, Australia", "description": "You're an outgoing, sun-loving individual who thrives by the water. Sydney's iconic beaches, outdoor lifestyle, and energetic vibe are perfect for your adventurous and optimistic spirit. You love social gatherings, active pursuits, and soaking up the warm weather.", "imageUrl": "../images/quiz10/Sydney.jpg" },
+                { "title": "Berlin, Germany", "description": "You're a free spirit who values creativity, history, and a strong sense of community. Berlin's alternative art scene, rich historical layers, and diverse neighborhoods offer the perfect playground for your intellectual, open-minded, and innovative personality. You appreciate affordability and a city that reinvents itself.", "imageUrl": "../images/quiz10/Berlin.jpg" },
+                { "title": "Amsterdam, Netherlands", "description": "You appreciate charm, progressive thinking, and a city that's easy to navigate. Amsterdam's picturesque canals, cycling culture, and vibrant cultural scene appeal to your open, friendly, and practical nature. You enjoy a balance of historical beauty and modern convenience.", "imageUrl": "../images/quiz10/Amsterdam.jpg" },
+                { "title": "Boulder, Colorado, USA", "description": "You crave an active outdoor lifestyle combined with an innovative and wellness-focused community. Boulder's stunning natural surroundings, healthy living ethos, and thriving tech scene are a perfect match for your adventurous, health-conscious, and forward-thinking personality. You love mountain access and a vibrant local scene.", "imageUrl": "../images/quiz10/Boulder.jpg" },
+                { "title": "Florence, Italy", "description": "You are a romantic soul with a deep love for art, history, and exquisite craftsmanship. Florence's Renaissance masterpieces, charming streets, and world-renowned cuisine perfectly complement your refined, appreciative, and aesthetically driven personality. You seek beauty, tradition, and a leisurely pace of life.", "imageUrl": "../images/quiz10/Florence.jpg" },
+                { "title": "Copenhagen, Denmark", "description": "You value design, sustainability, and a high quality of life. Copenhagen's hygge culture, innovative urban planning, and strong social fabric resonate with your minimalist, community-oriented, and well-being-focused personality. You appreciate efficiency, balance, and a modern yet cozy atmosphere.", "imageUrl": "../images/quiz10/Copenhagen.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

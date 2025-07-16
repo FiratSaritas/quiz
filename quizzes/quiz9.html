@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Color Is Your Aura? - QuizPersona</title>
+    <meta name="description" content="Unlock your true self with QuizPersona! Dive into fun, insightful personality quizzes on Marvel, Harry Potter, Friends, and more. Discover who you truly are!">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: Pinterest</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "What Color Is Your Aura?",
+            "questions": [
+                { "text": "How do you typically feel when you wake up in the morning?", "options": ["Energized and ready to take on the day!", "Optimistic and looking forward to new possibilities.", "Calm and focused, ready for peaceful productivity.", "A bit sleepy, but curious about what the day holds.", "Reflective, thinking about deeper meanings.", "Compassionate, thinking about loved ones.", "Balanced and ready to embrace growth.", "Clear-headed and open to whatever comes."] },
+                { "text": "What's your natural approach to a new challenge?", "options": ["Tackle it head-on with passion and drive.", "Brainstorm creative solutions and look for opportunities.", "Analyze it calmly and approach it logically.", "Seek advice from others and trust my intuition.", "Look for the spiritual lesson or deeper meaning.", "Offer help to anyone else struggling with it.", "Adapt and find a harmonious way forward.", "Approach it with a clean slate, open to possibilities."] },
+                { "text": "Which social setting appeals to you most?", "options": ["A high-energy party where I can be lively.", "A vibrant gathering where I can share ideas and laugh.", "A quiet, intimate conversation with a close friend.", "A small group discussing profound topics.", "A spiritual retreat or reflective gathering.", "A community event where I can connect and support others.", "A balanced gathering of familiar faces and new acquaintances.", "Any place where I feel completely authentic and free."] },
+                { "text": "What type of environment makes you feel most at peace?", "options": ["A buzzing city with constant action.", "A bright, sunny place that sparks joy.", "By the ocean or a calm lake.", "A cozy space filled with books and quiet contemplation.", "A sacred space or natural wonder.", "A warm, loving home surrounded by family.", "A lush garden or forest.", "A minimalist, uncluttered space."] },
+                { "text": "What's your biggest strength?", "options": ["Your drive and courage.", "Your optimism and intelligence.", "Your empathy and communication skills.", "Your intuition and wisdom.", "Your spiritual connection and insight.", "Your compassion and nurturing nature.", "Your ability to balance and heal.", "Your clarity and potential for anything."] },
+                { "text": "How do you express affection to loved ones?", "options": ["Through enthusiastic gestures and shared adventures.", "By cheering them up and making them laugh.", "By listening deeply and offering wise counsel.", "Through thoughtful gifts that show you understand them.", "By sharing spiritual insights or profound moments.", "Through physical touch and acts of service.", "By spending quality time in harmony.", "By simply being present and accepting."] },
+                { "text": "Which word resonates with you most?", "options": ["Dynamic", "Joyful", "Serene", "Mysterious", "Enlightened", "Loving", "Harmonious", "Pure"] },
+                { "text": "What's your ultimate goal in life?", "options": ["To achieve great things and experience life to the fullest.", "To innovate, inspire, and spread happiness.", "To find inner peace and help others communicate effectively.", "To gain deep understanding and follow my true path.", "To connect with the divine and live a purpose-driven life.", "To give and receive boundless love and compassion.", "To create balance, foster growth, and heal where needed.", "To live authentically, unburdened, and evolve constantly."] }
+            ],
+            "results": [
+                { "title": "Red Aura", "description": "Your aura is Red! You are passionate, energetic, and full of vitality. You're driven, courageous, and love to experience life intensely. Sometimes, this can manifest as impatience or a strong temper, but your enthusiasm is undeniable.", "imageUrl": "../images/quiz9/Red.jpg" },
+                { "title": "Orange Aura", "description": "Your aura is Orange! You are creative, enthusiastic, and highly social. You love to have fun, connect with others, and are often the life of the party. You're adventurous and embrace new experiences with joy.", "imageUrl": "../images/quiz9/Orange.jpg" },
+                { "title": "Yellow Aura", "description": "Your aura is Yellow! You are optimistic, intelligent, and highly confident. You have a bright, cheerful disposition and love to learn and share your knowledge. You're a natural leader who inspires others with your sunny outlook.", "imageUrl": "../images/quiz9/Yellow.jpg" },
+                { "title": "Green Aura", "description": "Your aura is Green! You are balanced, nurturing, and connected to nature. You have a calming presence and are often a natural healer. You value growth, harmony, and stability, striving for peace in your surroundings.", "imageUrl": "../images/quiz9/Green.jpg" },
+                { "title": "Blue Aura", "description": "Your aura is Blue! You are calm, intuitive, and an excellent communicator. You possess deep empathy and a desire to help others. You find peace in quiet contemplation and are drawn to truth and authenticity.", "imageUrl": "../images/quiz9/Blue.jpg" },
+                { "title": "Indigo Aura", "description": "Your aura is Indigo! You are highly intuitive, perceptive, and deeply spiritual. You possess wisdom beyond your years and are often drawn to mystical or philosophical pursuits. You trust your inner voice above all else.", "imageUrl": "../images/quiz9/Indigo.jpg" },
+                { "title": "Violet/Purple Aura", "description": "Your aura is Violet/Purple! You are wise, artistic, and deeply connected to your spiritual side. You're a visionary who sees the bigger picture and seeks to inspire. You often possess a magical or ethereal quality.", "imageUrl": "../images/quiz9/Violet.jpg" },
+                { "title": "Pink Aura", "description": "Your aura is Pink! You are compassionate, loving, and nurturing. You lead with your heart, valuing harmony, romance, and kindness above all else. You spread warmth and empathy wherever you go.", "imageUrl": "../images/quiz9/Pink.jpg" },
+                { "title": "White/Clear Aura", "description": "Your aura is White/Clear! You are pure, open, and have immense potential. You are highly adaptable, can take on various roles, and are often embarking on a new path. You are perceptive and transparent, with a fresh perspective on life.", "imageUrl": "../images/quiz9/White.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>

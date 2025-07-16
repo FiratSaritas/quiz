@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Your Dream Job Based on Your Personality? - QuizPersona</title>
+    <meta name="description" content="Discover your ideal career path! Take this fun quiz to find out which profession truly aligns with your unique personality and skills.">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9394843071535758" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>QuizPersona</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <div id="quiz-container">
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+                <div id="question-content">
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2 id="result-title"></h2>
+                <img id="result-image" class="result-image" src="" alt="Quiz Result Image" style="display: none;">
+                <p id="image-credit" style="font-size: 0.8rem; font-style: italic; color: #666; display: none;">Photo: AI Generated</p>
+                <p id="result-description"></p>
+                <a href="../index.html#quizzes" class="btn btn-primary">Try another quiz!</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="application/json" id="quiz-data">
+        {
+            "title": "What's Your Dream Job Based on Your Personality?",
+            "questions": [
+                { "text": "What kind of work environment do you prefer?", "options": ["Fast-paced and dynamic, with constant interaction.", "Collaborative and creative, with a focus on new ideas.", "Structured and analytical, with clear goals.", "Independent, with opportunities for deep focus.", "People-focused and empathetic, helping others.", "Hands-on and practical, building or fixing things.", "Outdoors, or a role that involves travel and exploration.", "Strategic and influential, guiding decisions.", "Performance-driven, with clear metrics for success.", "Ever-evolving, learning new technologies and methods."] },
+                { "text": "What type of problem-solving excites you most?", "options": ["Quick, on-the-spot decisions under pressure.", "Brainstorming innovative solutions with a team.", "Breaking down complex issues into logical steps.", "Solving abstract puzzles or conducting research.", "Mediating conflicts and finding harmonious solutions.", "Troubleshooting and fixing tangible issues.", "Navigating unpredictable situations and adapting.", "Analyzing data to identify trends and make recommendations.", "Overcoming challenges to achieve sales or growth targets.", "Developing new systems or algorithms."] },
+                { "text": "How do you prefer to spend your free time?", "options": ["Socializing, attending events, networking.", "Engaging in artistic hobbies or creative projects.", "Reading, learning new skills, or quiet reflection.", "Researching niche topics or developing theories.", "Volunteering, mentoring, or spending time with loved ones.", "Working on DIY projects or outdoor activities.", "Traveling, exploring new cultures, or nature photography.", "Planning, organizing, or managing personal projects.", "Competing in sports or pursuing ambitious personal goals.", "Experimenting with new tech or coding."] },
+                { "text": "What kind of impact do you want to make?", "options": ["To inspire and lead, creating significant change.", "To bring beauty, joy, or new perspectives to the world.", "To ensure accuracy, efficiency, and order.", "To discover new knowledge or advance understanding.", "To directly help individuals and improve lives.", "To build, create, or maintain essential infrastructure.", "To protect, preserve, or connect with nature/wildlife.", "To influence policy or shape the future of an organization.", "To achieve measurable success and drive progress.", "To innovate and build the future through technology."] },
+                { "text": "Which skill comes most naturally to you?", "options": ["Public speaking and persuasion.", "Conceptual thinking and artistic expression.", "Attention to detail and logical reasoning.", "Critical analysis and independent thought.", "Active listening and empathy.", "Problem-solving with tangible objects.", "Adaptability and resourcefulness.", "Strategic planning and decision-making.", "Negotiation and goal achievement.", "Complex system design and programming."] },
+                { "text": "What motivates you in a professional setting?", "options": ["Recognition, influence, and opportunities for advancement.", "Creative freedom and the ability to express myself.", "Stability, clear guidelines, and a sense of accomplishment.", "Intellectual challenge and the pursuit of truth.", "Making a tangible difference in someone's day.", "Seeing the direct result of my physical labor or craft.", "New experiences, travel, and diverse challenges.", "The power to shape outcomes and direct initiatives.", "Commission, bonuses, and exceeding targets.", "Solving complex technical problems and building new solutions."] },
+                { "text": "How do you handle stress?", "options": ["By confronting it head-on and taking charge.", "By channeling it into creative expression.", "By meticulously planning and organizing.", "By retreating to think and analyze the situation.", "By seeking support and helping others.", "By staying calm and focusing on the task at hand.", "By adapting and finding new ways around obstacles.", "By maintaining a clear vision and delegating.", "By pushing harder and focusing on the end goal.", "By debugging the source of the problem."] },
+                { "text": "What's your ideal team dynamic?", "options": ["I prefer to lead and motivate others.", "A collaborative environment where ideas flow freely.", "A well-structured team with defined roles.", "I often prefer working independently or in small, focused groups.", "A supportive team where everyone helps each other.", "A hands-on team working towards a common physical goal.", "A flexible team ready for new challenges.", "A team of experts pooling knowledge for strategic outcomes.", "A competitive team driven to win.", "A highly skilled team pushing technological boundaries."] },
+                { "text": "How do you measure success?", "options": ["By achieving leadership positions and significant impact.", "By the originality and quality of my creations.", "By the accuracy and efficiency of my work.", "By the depth of my understanding or discoveries.", "By the positive change I bring to people's lives.", "By the durability and effectiveness of what I build.", "By the experiences gained and problems overcome in diverse settings.", "By the successful implementation of strategic goals.", "By meeting and exceeding targets and driving revenue.", "By the functionality and innovation of my solutions."] },
+                { "text": "Which statement best describes your communication style?", "options": ["Direct, persuasive, and inspiring.", "Expressive, imaginative, and engaging.", "Clear, precise, and fact-based.", "Thoughtful, detailed, and analytical.", "Empathetic, supportive, and understanding.", "Practical, concise, and focused on tasks.", "Versatile, adaptable, and observational.", "Diplomatic, influential, and visionary.", "Confident, articulate, and goal-oriented.", "Technical, logical, and problem-focused."] }
+            ],
+            "results": [
+                { "title": "Entrepreneur/Startup Founder", "description": "You're a visionary, driven, and unafraid to take risks. You thrive on innovation, building something from the ground up, and leading a team to achieve a big impact. Your passion and determination make you ideal for the fast-paced, demanding world of startups.", "imageUrl": "../images/quiz11/Entrepreneur.jpg" },
+                { "title": "Creative Director/Artist", "description": "You possess a rich imagination and a strong desire to express yourself. Whether it's through visual arts, writing, or performance, you're driven to create, inspire, and bring new perspectives to the world. You value originality and aesthetic appeal.", "imageUrl": "../images/quiz11/CreativeDirector.jpg" },
+                { "title": "Data Scientist/Analyst", "description": "You have a meticulous mind and a knack for finding patterns in complex information. You love to analyze, interpret, and use data to solve problems and make informed decisions. Precision and logic are your greatest strengths.", "imageUrl": "../images/quiz11/DataScientist.jpg" },
+                { "title": "Professor/Researcher", "description": "Your insatiable curiosity and love for deep learning make you an ideal academic. You enjoy exploring complex theories, conducting in-depth research, and contributing to humanity's collective knowledge. Intellectual challenge is your driving force.", "imageUrl": "../images/quiz11/ProfessorResearcher.jpg" },
+                { "title": "Therapist/Counselor", "description": "You're a natural empath with a profound desire to help others navigate their challenges. Your excellent listening skills, compassion, and ability to offer guidance make you perfectly suited for a career that supports mental and emotional well-being.", "imageUrl": "../images/quiz11/TherapistCounselor.jpg" },
+                { "title": "Engineer (Mechanical/Civil)", "description": "You love to build, design, and see your ideas take tangible form. Your practical approach, problem-solving skills, and attention to detail make you excellent at creating or maintaining structures, machines, and systems that benefit society.", "imageUrl": "../images/quiz11/Engineer.jpg" },
+                { "title": "Environmentalist/Conservationist", "description": "You feel a deep connection to nature and are passionate about protecting the planet. Your ideal job involves fieldwork, advocacy, research, or policy-making aimed at preserving ecosystems and promoting sustainability.", "imageUrl": "../images/quiz11/Environmentalist.jpg" },
+                { "title": "Management Consultant", "description": "You thrive on solving complex business challenges and guiding organizations toward success. Your analytical mind, strategic thinking, and ability to influence make you highly effective at identifying problems and implementing solutions.", "imageUrl": "../images/quiz11/ManagementConsultant.jpg" },
+                { "title": "Sales Executive/Business Developer", "description": "You're a natural persuader, communicator, and negotiator. You enjoy the thrill of closing deals, building relationships, and driving growth. Your optimism and goal-oriented nature make you excel in competitive environments.", "imageUrl": "../images/quiz11/SalesExecutive.jpg" },
+                { "title": "Software Developer/Programmer", "description": "You have a logical mind and a passion for creating functional, innovative digital solutions. You enjoy the process of writing code, debugging, and building applications or systems that solve real-world problems.", "imageUrl": "../images/quiz11/SoftwareDeveloper.jpg" },
+                { "title": "Architect", "description": "You combine artistic vision with practical problem-solving. You enjoy designing functional and aesthetically pleasing spaces, translating abstract ideas into concrete structures. You're meticulous and have a keen eye for detail.", "imageUrl": "../images/quiz11/Architect.jpg" },
+                { "title": "Journalist/Writer", "description": "You're driven by curiosity and a desire to inform, explore, and tell stories. You have excellent communication skills and enjoy researching, investigating, and conveying information in a clear and engaging manner.", "imageUrl": "../images/quiz11/Journalist.jpg" },
+                { "title": "Event Planner", "description": "You are highly organized, creative, and thrive under pressure. You love bringing people together and creating memorable experiences, meticulously coordinating every detail to ensure flawless execution.", "imageUrl": "../images/quiz11/EventPlanner.jpg" },
+                { "title": "Chef/Culinary Artist", "description": "You have a passion for food, creativity, and bringing joy through taste. You thrive in a dynamic kitchen environment, combining precision with artistic flair to craft delicious and innovative dishes.", "imageUrl": "../images/quiz11/Chef.jpg" },
+                { "title": "Pilot", "description": "You are disciplined, calm under pressure, and have a strong sense of responsibility. You are drawn to careers that require precision, technical skill, and offer unique perspectives and travel opportunities.", "imageUrl": "../images/quiz11/Pilot.jpg" },
+                { "title": "Veterinarian/Animal Caretaker", "description": "You possess a deep love and empathy for animals. You are dedicated to their well-being, enjoy problem-solving in a hands-on environment, and are driven by a desire to heal and care for creatures great and small.", "imageUrl": "../images/quiz11/Veterinarian.jpg" }
+            ]
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About QuizPersona</h3>
+                    <p>Discover your personality through fun and insightful quizzes. Explore yourself, your preferences, and connect with popular characters.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#quizzes">All Quizzes</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@QuizPersona.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Quiz Street, Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QuizPersona. All rights reserved. Designed with <i class="fas fa-heart"></i> for quiz enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quiz-engine.js"></script>
+</body>
+</html>
